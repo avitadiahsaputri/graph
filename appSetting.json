@@ -1,0 +1,27 @@
+
+{
+    "AzureAd": {
+      "Instance": "https://login.microsoftonline.com/",
+      "TenantId": "7fc8d725-1333-4f9e-b957-2bc5f16fe0f1",
+      "ClientId": "E7e25b5f4-e1eb-475e-83c6-956f957ffc2e",
+      "ClientCertificates": [
+        {
+          "SourceType": "StoreWithThumbprint",
+          "CertificateStorePath": "CurrentUser/My",
+          "CertificateThumbprint": "Enter the certificate thumbprint obtained from the Azure portal"
+        }   
+      ],
+      "CallbackPath": "/signin-oidc"
+    },
+    "DownstreamApi": {
+      "BaseUrl": "https://graph.microsoft.com/v1.0/me",
+      "Scopes": "user.read"
+    },
+    "Logging": {
+      "LogLevel": {
+        "Default": "Information",
+        "Microsoft.AspNetCore": "Warning"
+      }
+    },
+    "AllowedHosts": "*"
+  }
