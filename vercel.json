@@ -1,0 +1,17 @@
+{
+    "name": "graph-2",
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/routes/*",
+        "dest": "./routes/index.js"
+      }
+    ]
+  }
+  
+  
